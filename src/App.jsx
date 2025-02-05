@@ -38,10 +38,14 @@ function App() {
   )
 
   function handleDice(){
-    setDice(prevHold => prevHold.map(item => {
-      return item.isHeld !== true ? {...item, value: Math.ceil(Math.random() * 6)} : item
-      
-    }))
+    if (!gameWon){
+      setDice(prevHold => prevHold.map(item => {
+        return item.isHeld !== true ? {...item, value: Math.ceil(Math.random() * 6)} : item
+        
+      }))
+    } else {
+      setDice(generateDice())
+    }
   }
 
   return (
