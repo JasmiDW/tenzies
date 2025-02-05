@@ -1,9 +1,28 @@
-# React + Vite
+## Tenzies - Scrimba Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tenzies est un jeu interactif développé dans le cadre du parcours React de Scrimba. 
 
-Currently, two official plugins are available:
+## Fonctionnalités
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# tenzies
+- L'utilisateur lance 10 dés affichant chacun un nombre aléatoire entre 1 et 6.
+- Il peut cliquer sur un dé pour le "verrouiller", empêchant ainsi sa valeur de changer au prochain lancer.
+- Le but du jeu est d'obtenir 10 dés ayant la même valeur.
+- Un bouton "Roll" permet de relancer uniquement les dés non verrouillés.
+- Une fois que tous les dés affichent la même valeur, une alerte indique que l'utilisateur a gagné.
+
+## Technologies utilisées
+
+- React (useState, useEffect)
+- CSS pour le style
+
+
+## Améliorations possibles
+
+- Ajouter un chronomètre pour mesurer le temps mis à gagner.
+- Sauvegarder le score et le meilleur temps dans le stockage local.
+- Ajouter des animations pour rendre le jeu plus interactif.
+
+## Crédits
+
+Projet réalisé dans le cadre de la formation **Learn React** sur Scrimba.
+
